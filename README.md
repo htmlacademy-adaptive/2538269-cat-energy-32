@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Екатерина Ларионова](https://up.htmlacademy.ru/adaptive/32/user/2538269).
-* Наставник: `Андрей Грачёв`. (https://htmlacademy.ru/profile/angra).
+* Наставник: [Андрей Грачёв](https://htmlacademy.ru/profile/angra).
 * Сайт: https://katerinalarionova.github.io/2538269-cat-energy-32/
 
 ---
