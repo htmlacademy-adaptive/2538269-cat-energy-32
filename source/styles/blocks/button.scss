@@ -1,4 +1,5 @@
 .button {
+  display: block;
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
@@ -7,7 +8,7 @@
   text-decoration: none;
   border: none;
   margin: 0;
-  padding: 0;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -15,11 +16,33 @@
   }
 }
 
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  background-color: #5eaa2f;
+  color: #8ec36d;
+}
+
 .button--accent {
   @include accent-mix-button;
 }
 
 .button--more {
+  display: block;
   background-color: $secondary-background;
   color: $base-color-text;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button--more:hover {
+  background-color: #ebebeb;
+}
+
+.button--more:active {
+  background-color: #ebebeb;
+  color: #444444;
 }

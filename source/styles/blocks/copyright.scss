@@ -1,9 +1,17 @@
 .copyright__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
   color: $base-color-text;
+
   @include media-secondary-size;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    gap: 23px;
+  }
 }
 
 .copyright__image {
@@ -19,6 +27,6 @@
   background-color: $accent-color;
 }
 
-.copyright__link:active .copyright__image {
+.copyright__link:active {
   opacity: 0.3;
 }

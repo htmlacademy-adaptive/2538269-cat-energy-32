@@ -2,6 +2,24 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 26px;
+    width: 170px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 0 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    width: 132px;
+  }
 }
 
 .social__link {
@@ -10,7 +28,7 @@
   height: 22px;
 }
 
-.social__link:hover{
+.social__link:hover {
   background-color: $accent-color;
   cursor: pointer;
 }
@@ -32,9 +50,11 @@
 .social__link--youtube {
   mask-image: url("../../icons/icon-youtube.svg");
   background-color: $accent-dark-color;
+  width: 24px;
 }
 
 .social__link--telegram {
   mask-image: url("../../icons/icon-telegram.svg");
   background-color: $accent-dark-color;
+  height: 20px;
 }
