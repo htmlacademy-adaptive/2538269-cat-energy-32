@@ -1,0 +1,115 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (max-width: $mobile-width) {
+    background-image:
+      image-set(
+        url("../../images/promo-background-mobile@1x.webp") 1x type("image/webp"),
+        url("../../images/promo-background-mobile@2x.webp") 2x type("image/webp"),
+        url("../../images/promo-background-mobile@1x.jpg") 1x type("image/jpg"),
+        url("../../images/promo-background-mobile@2x.jpg") 2x type("image/jpg")
+      ),
+      linear-gradient(#64a73b 302px, #ffffff 302px);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 320px 302px, 100%;
+  }
+}
+
+.promo__container {
+  color: $accent-color-text;
+  font-weight: 400;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    min-height: 810px;
+    padding: 0 0 0 90px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 506px;
+    padding: 35px 0 0 80px;
+  }
+}
+
+.promo__title {
+  margin: 27px 0 25px;
+  font-size: 36px;
+  line-height: 36px;
+  color: $accent-color-text;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    @include media-title-size;
+    color: $primary-color-text;
+    margin: 0 0 40px;
+    word-spacing: -1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 414px;
+    margin: 0 0 39px;
+  }
+}
+
+.promo__slogan {
+  margin: 0 0 29px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 14px;
+    color: $accent-color-text;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 52px;
+    color: $primary-color-text;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 283px;
+  }
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto 3px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: block;
+    top: 341px;
+    right: calc(50% - 355px);
+    background-attachment: fixed;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 49.5%;
+    transform: translate(-28%, -45px);
+  }
+}
+
+.promo__button {
+  @include accent-mix-button;
+  padding: 10px 15px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    max-width: 244px;
+    padding: 14px 26px;
+  }
+}

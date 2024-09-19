@@ -1,0 +1,125 @@
+.site-list {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  top: 64px;
+  width: 100%;
+  list-style-type: none;
+  background-color: $base-background;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    min-width: 441px;
+    margin-left: auto;
+    position: relative;
+    width: auto;
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 35px;
+    background-color: unset;
+    width: 480px;
+  }
+}
+
+.site-list--open {
+  @media (max-width: $mobile-width) {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+.site-list--closed {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.site-list--nojs {
+  @media (max-width: $mobile-width) {
+    top: 14px;
+    position: relative;
+    display: block;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+}
+
+.site-list__item {
+  @media (max-width: $mobile-width) {
+    border-bottom: 1px solid $line-color;
+  }
+}
+
+.site-list__item:first-child {
+  @media (max-width: $mobile-width) {
+    border-top: 1px solid $line-color;
+  }
+}
+
+.site-list__item-current {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $accent-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $accent-color;
+  }
+}
+
+.site-list__link {
+  display: block;
+  text-align: center;
+  padding: 22px 10px 24px;
+  font-family: $oswald;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $primary-color-text;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 11px 1px 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: $accent-color-text;
+    padding: 10px 0 6px;
+  }
+}
+
+.site-list__link:hover {
+  opacity: 0.6;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
+}
+
+.site-list__link--catalog {
+  @media (min-width: $desktop-width) {
+    color: $promo-color-text;
+  }
+}
+
+.site-list__link--index {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $accent-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid $accent-color-text;
+  }
+}

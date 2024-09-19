@@ -1,0 +1,156 @@
+.advantages {
+  padding-top: 21px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+    border-bottom: 1px solid $line-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-bottom: 69px;
+    border-bottom: none;
+  }
+}
+
+.advantages__title {
+  margin: 0 1px 40px;
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $primary-color-text;
+
+  @media (min-width: $tablet-width) {
+    @include media-title-size;
+    margin: 0 0 32px;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    gap: 37px 137px;
+    counter-reset: example 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 83px;
+  }
+}
+
+.advantages__item {
+  color: $base-color-text;
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 247px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    padding: 40px 0 57px;
+
+    @include media-font-size;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 242px;
+    padding: 40px 0 57px;
+  }
+}
+
+.advantages__item::before {
+  @include background-item;
+  min-width: 60px;
+  height: 60px;
+}
+
+.advantages__item::after {
+  @media (min-width: $tablet-width) {
+    counter-increment: (example);
+    content: counter(example);
+    width: 128px;
+    height: 280px;
+    font-family: $oswald;
+    font-size: 280px;
+    line-height: 280px;
+    position: absolute;
+    right: 6px;
+    top: 0;
+    color: $secondary-background;
+    text-align: center;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 3px;
+  }
+}
+
+.advantages__item--leaf,
+.advantages__item--water,
+.advantages__item--nutrition,
+.advantages__item--time {
+  position: relative;
+}
+
+.advantages__item--leaf::before {
+  position: relative;
+  content: "";
+  background-image: url("../../icons/icon-leaf.svg");
+  background-size: 25px 32px;
+  background-repeat: no-repeat;
+
+  @include background-item;
+}
+
+.advantages__item--water::before {
+  position: relative;
+  content: "";
+  background-image: url("../../icons/icon-water.svg");
+  background-size: 26px 29px;
+  background-repeat: no-repeat;
+
+  @include background-item;
+}
+
+.advantages__item--nutrition::before {
+  position: relative;
+  content: "";
+  background-image: url("../../icons/icon-nutrition.svg");
+  background-size: 25px 30px;
+  background-repeat: no-repeat;
+
+  @include background-item;
+}
+
+.advantages__item--time::before {
+  position: relative;
+  content: "";
+  background-image: url("../../icons/icon-time.svg");
+  background-size: 26px 31px;
+  background-repeat: no-repeat;
+
+  @include background-item;
+}
+
+.advantages__text {
+  padding: 2px 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
