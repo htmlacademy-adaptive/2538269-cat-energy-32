@@ -21,6 +21,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 30px;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {

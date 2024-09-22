@@ -109,43 +109,6 @@
   line-height: 20px;
 }
 
-.card-more__button {
-  background-image: url("../../icons/plus.svg");
-  background-repeat: no-repeat;
-  background-color: inherit;
-  padding: 10px;
-  font-size: 16px;
-  line-height: 20px;
-  width: 30px;
-  height: 30px;
-  border: none;
-  margin-bottom: 23px;
-
-  @media (min-width: $tablet-width) {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 39px;
-  }
-}
-
-.card-more__inner {
-  margin: 0 0 21px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 82px;
-    padding: 0 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    margin: 0 0 90px;
-  }
-}
-
 .card__info {
   display: flex;
   justify-content: space-between;
@@ -158,82 +121,5 @@
     margin: 0;
     padding: 6px 0 5px;
     border-bottom: 1px solid #9d9d9d;
-  }
-}
-
-.card-more__info {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  line-height: 16px;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 18px;
-    border: none;
-    text-align: center;
-    padding: 0;
-  }
-}
-
-.card-more__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.card-more__title {
-  font-family: $oswald;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin: 0 0 8px;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 auto 23px;
-    width: 135px;
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 auto 26px;
-  }
-}
-
-.card-more {
-  padding: 24px 20px 0;
-
-  @media (min-width: $tablet-width) {
-    width: 324px;
-    padding: 81px 0 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 245px;
-  }
-}
-
-.card-more__box {
-  width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 250px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 169px;
-  }
-}
-
-.card-more__box--show {
-  @media (min-width: $tablet-width) {
-    width: auto;
-    border: 1px solid $secondary-background;
-    padding: 50px 37px 40px;
   }
 }
